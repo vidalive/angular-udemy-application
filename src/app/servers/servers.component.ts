@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
+  // allowNewUser is a property. It is not a variable. 
   allowNewServer = false;
 
+  
   constructor() {
+    // you set a timeout that after 2 seconds button gets enabled.
     setTimeout(
       () => {
         this.allowNewServer = true;
